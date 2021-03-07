@@ -1,36 +1,53 @@
 // main: ../style.less
 
 .develop {
-  padding-top: .5rem;
+  padding-top: 2.4rem;
   padding-bottom: 4rem;
 }
 
 .develop__images {
-  margin-bottom: 3.8rem;
+  margin-bottom: 5.4rem;
+  position: relative;
 
   .text-center;
 }
 
 .develop__image {
-  position: relative;
 
-  &:nth-child(2n+1) {
-
-    padding-top: 4.4rem;
+  &--left,
+  &--right {
+    position: absolute;
+    top: 3rem;
   }
+
+  &--left {
+    left: 14.7rem;
+
+  }
+
+  &--right {
+    right: 14.2rem;
+  }
+
+  // &:nth-child(2n+1) {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   // padding-top: 4.4rem;
+  // }
 }
 
 .develop__items {
   .dflex;
-
+  flex-wrap: wrap;
   margin: 0 -1.5rem;
 }
 
 .develop__item {
   margin: 0 1.2rem 3.5rem;
-  padding: 1.8rem 7.6rem 2.2rem;
+  padding: 1.5rem 4rem 2.2rem;
 
-  width: 33.3333%;
+  width: 31.3333%;
 
   box-shadow: @shadow-box;
   border-radius: 1rem;
