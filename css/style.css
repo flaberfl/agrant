@@ -676,6 +676,17 @@ hr {
   color: #fff;
   text-decoration: underline;
 }
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 3.4rem;
+}
+.footer__social-link {
+  margin-bottom: 1rem;
+  stroke: #0a54a0;
+}
 .footer__copyright {
   padding: 1.6rem 0;
   font-size: 1.3rem;
