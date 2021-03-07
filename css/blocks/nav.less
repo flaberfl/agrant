@@ -1,0 +1,45 @@
+// main: ../style.less
+
+.nav {
+  .dflex;
+  .vcenter;
+}
+
+.nav__link {
+  margin-left: 5.9rem;
+  padding: .2rem 0;
+  position: relative;
+
+  font-size: 2rem;
+  color: @blue;
+  font-weight: 400;
+  // line-height: 1.2px;
+
+  &:before,
+  &:after {
+    .before;
+    height: 1px;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: @orange;
+
+    transition: width .2s linear, color .2s linear;
+  }
+
+  &:after {
+    top: auto;
+    bottom: 0;
+  }
+
+  &:hover {
+
+    &:before,
+    &:after {
+      .w100;
+    }
+
+    color: @orange;
+  }
+
+}
