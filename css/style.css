@@ -574,6 +574,7 @@ hr {
 }
 .features {
   padding-top: 4.8rem;
+  padding-bottom: 4.7rem;
   background-color: #f6f6f6;
 }
 .features__title {
@@ -632,4 +633,59 @@ hr {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.8;
+}
+.footer {
+  background-color: #717171;
+  color: #c4c4c4;
+}
+.footer__top {
+  padding: 4.3rem 0 0.9rem;
+  border-bottom: 1px solid #c4c4c4;
+}
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer__title {
+  margin-bottom: 2.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0.4rem;
+}
+.footer__col {
+  margin-right: 15.5rem;
+}
+.footer__list-item {
+  margin-bottom: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: color 0.2s linear;
+}
+.footer__list-item:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer__copyright {
+  padding: 1.6rem 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.footer__copyright a {
+  background-color: #c4c4c4;
+  color: #c4c4c4;
+}
+.footer__copyright a:hover {
+  color: #fff;
+  text-decoration: underline;
 }

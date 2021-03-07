@@ -1,0 +1,66 @@
+// main: ../style.less
+
+.footer {
+    background-color: @gray;
+    color: @gray1;
+}
+
+.footer__top {
+    padding: 4.3rem 0 .9rem;
+
+    border-bottom: 1px solid @gray1;
+}
+
+.footer__content {
+    .dflex;
+    .jbetween;
+}
+
+.footer__title {
+    margin-bottom: 2.7rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: @white;
+    text-transform: uppercase;
+}
+
+.footer__lists {
+    .dflex;
+    padding-left: .4rem;
+}
+
+.footer__col {
+    margin-right: 15.5rem;
+}
+
+.footer__list-item {
+    margin-bottom: 1.1rem;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    transition: color .2s linear;
+
+    &:hover {
+        color: @white;
+        text-decoration: underline;
+    }
+}
+
+.footer__copyright {
+    padding: 1.6rem 0;
+
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    a {
+        background-color: @gray1;
+        color: @gray1;
+        &:hover {
+            color: @white;
+            text-decoration: underline;
+        }
+    }
+
+}
