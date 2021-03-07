@@ -56,12 +56,22 @@
 
 .footer__social-link {
     margin-bottom: 1rem;
-    stroke: @blue;
+
+    &:nth-child(3) {
+      display: block;
+      border-radius: 8px;
+    }
+
+    transition: transform .2s linear;
+
+    &:hover {
+      transform: translateX(5%);
+    }
 
 }
 
 .footer__copyright {
-    padding: 1.6rem 0;
+    padding: 2rem 0;
 
     font-size: 1.3rem;
     font-weight: 400;
