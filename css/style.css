@@ -681,10 +681,6 @@ hr {
   font-size: 1.3rem;
   font-weight: 400;
 }
-.footer__copyright a {
-  background-color: #c4c4c4;
-  color: #c4c4c4;
-}
 .footer__copyright a:hover {
   color: #fff;
   text-decoration: underline;
