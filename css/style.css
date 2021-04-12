@@ -429,7 +429,7 @@ p {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -470,10 +470,9 @@ p {
   .nav {
     position: fixed;
     flex-direction: column;
-    padding-bottom: 3rem;
+    padding: 3rem;
     top: 0;
     right: 0;
-    height: 100%;
     width: 100%;
     background-color: #fff;
     z-index: 999;
@@ -518,6 +517,13 @@ p {
 .nav__link:hover:before,
 .nav__link:hover:after {
   width: 100%;
+}
+@media (max-width: 767px) {
+  .nav__link {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid #f48220;
+  }
 }
 .burger {
   position: fixed;
