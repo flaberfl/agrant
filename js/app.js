@@ -5,8 +5,10 @@ const body = document.body;
 burger.addEventListener('click', event => {
   if (body.classList.contains('show-sidebar')) {
     closeSidebar();
+    // console.log('close');
   } else {
     showSidebar();
+    // console.log('show');
   }
 });
 

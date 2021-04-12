@@ -22,6 +22,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   color: @gray;
+
+  &.no-scroll,
+  &.show-sidebar {
+    overflow: hidden;
+  }
 }
 
 p {
@@ -39,6 +44,7 @@ p {
   left: 0;
   z-index: 100;
 }
+
 // .container {
 //   border: 1px solid @blue;
 // }
