@@ -10,6 +10,7 @@
   background: none;
   top: 0;
   right: 0;
+  z-index: 999;
 
   border: none;
   
@@ -25,7 +26,6 @@
     border-radius: 16px;
     background-color: @black;
     position: absolute;
-    z-index: 999;
   }
 
   &:before,
@@ -49,8 +49,6 @@
   }
 
   .show-sidebar & {
-
-    position: absolute;
 
     span {
       opacity: 0;

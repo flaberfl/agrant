@@ -14,7 +14,7 @@
     .w100;
 
     background-color: @white;
-    z-index: 999;
+    z-index: 800;
 
     overflow: auto;
 
@@ -45,11 +45,14 @@
     .before;
     height: 1px;
     width: 0;
+    .w100;
     top: 0;
     left: 0;
     background-color: @orange;
+    transform: scale(0);
 
-    transition: width .2s linear, color .2s linear;
+    transition: transform .2s linear;
+    // transition: width .2s linear, color .2s linear;
   }
 
   &:after {
@@ -60,16 +63,24 @@
   &:hover {
     color: @orange;
 
+    @media @mobile {
+      color: @blue;
+    }
+    
     &:before,
     &:after {
-      .w100;
+      // .w100;
+      transform: scale(1);
+      
+      @media @mobile {
+        display: none;
+      }
     }
   }
 
   @media @mobile {
     margin-bottom: 2rem;
     padding: 1rem;
-    // border-top: 2px solid @orange;
     border-bottom: 2px solid @orange;
   }
 }
