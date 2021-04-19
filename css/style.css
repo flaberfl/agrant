@@ -692,6 +692,9 @@ hr {
     margin: 3rem;
     width: 100%;
   }
+  .develop__item:last-child {
+    margin: 0 auto;
+  }
 }
 .develop__item-title {
   margin: 0 auto;
